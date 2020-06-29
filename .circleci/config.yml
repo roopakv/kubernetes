@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  swissknife: roopakv/swissknife@0.45.0
+
+workflows:
+  codeql:
+    jobs:
+      - swissknife/codeql-analysis:
+        languages: go
+        name: CodeQL Analysis
